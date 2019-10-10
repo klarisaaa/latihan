@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int tugas, uts, uas, hasil, ratarata, total;
+    cout << "masukan nilai tugas : ";
+    cin >> tugas;
+    cout << "masukan nilai uts : ";
+    cin >> uts;
+    cout << "masukan nilai uas : ";
+    cin >> uas;
+    tugas = (tugas*30)/100;
+    uts = (uts*30)/100;
+    uas = (uas*40)/100;
+    total = tugas + uts + uas;
+    cout << "nilai rata rata : " << total << endl;
+   if (total >= 85){
+    cout << "A" << endl;
+   }
+  else if (total<85 and total >= 75){
+      cout << "B" << endl;
+  }
+  else if (total<75 and total >= 60){
+      cout << "C" << endl;
+  }
+  else if (total<70 and total >= 45){
+      cout << "D" << endl;
+  }
+  else if (total<45){
+      cout << "E" << endl;
+  }
+ return 0; 
+}   
+    
