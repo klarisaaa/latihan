@@ -1,0 +1,113 @@
+int main() {
+    int tanggal,bulan,tahun;
+    cout <<"Masukkan tanggal: ";
+    cin >> tanggal;
+    cout <<"Masukkan bulan: ";
+    cin >> bulan;
+    cout <<"masukkan tahun: ";
+    cin >> tahun;
+    cout << "----------------------------" << endl;
+    cout << "Next Day..." <<endl;
+    cout << "----------------------------" << endl;
+    tanggal = tanggal + 1;
+    if(tahun%4!=0){
+        //bukan kabisat
+        if((bulan==1)||(bulan==3)||(bulan==5)||(bulan==7)||(bulan==8)||(bulan==10)||(bulan==12)){
+            if(tanggal>=32){
+                bulan = bulan+1;
+                tanggal =tanggal-31;
+                if(bulan>=13){
+                    tahun = tahun+1;
+                    bulan =bulan-12;
+                    cout << "Tanggal " << tanggal <<", Bulan " << bulan << ", Tahun " << tahun <<endl;
+                    return 0;
+                }
+                cout << "Tanggal " << tanggal <<", Bulan " << bulan << ", Tahun " << tahun <<endl;
+                return 0;
+            }
+            cout << "Tanggal " << tanggal <<", Bulan " << bulan << ", Tahun " << tahun <<endl;
+            return 0;
+        } else if((bulan==4)||(bulan==6)||(bulan==9)||(bulan==11)){
+            if(tanggal>=31){
+                bulan = bulan+1;
+                tanggal =tanggal-30;
+                if(bulan>=13){
+                    tahun = tahun+1;
+                    bulan =bulan-12;
+                    cout << "Tanggal " << tanggal <<", Bulan " << bulan << ", Tahun " << tahun <<endl;
+                    return 0;
+                }
+                cout << "Tanggal " << tanggal <<", Bulan " << bulan << ", Tahun " << tahun <<endl;
+                return 0;
+            }
+            cout << "Tanggal " << tanggal <<", Bulan " << bulan << ", Tahun " << tahun <<endl;
+            return 0;
+        } else if(bulan==2){
+            if(tanggal>=30){
+                bulan = bulan+1;
+                tanggal =tanggal-29;
+                if(bulan>=13){
+                    tahun = tahun+1;
+                    bulan =bulan-12;
+                    cout << "Tanggal " << tanggal <<", Bulan " << bulan << ", Tahun " << tahun <<endl;
+                    return 0;
+                }
+                cout << "Tanggal " << tanggal <<", Bulan " << bulan << ", Tahun " << tahun <<endl;
+                return 0;
+            }
+            cout << "Tanggal " << tanggal <<", Bulan " << bulan << ", Tahun " << tahun <<endl;
+            return 0;
+        }
+        
+    } else {
+        //kabisat
+        cout << "(TAHUN KABISAT TERDETEKSI)" << endl;
+        if((bulan==1)||(bulan==3)||(bulan==5)||(bulan==7)||(bulan==8)||(bulan==10)||(bulan==12)){
+            if(tanggal>=32){
+                bulan = bulan+1;
+                tanggal =tanggal-31;
+                if(bulan>=13){
+                    tahun = tahun+1;
+                    bulan =bulan-12;
+                    cout << "Tanggal " << tanggal <<", Bulan " << bulan << ", Tahun " << tahun <<endl;
+                    return 0;
+                }
+                cout << "Tanggal " << tanggal <<", Bulan " << bulan << ", Tahun " << tahun <<endl;
+                return 0;
+            }
+            cout << "Tanggal " << tanggal <<", Bulan " << bulan << ", Tahun " << tahun <<endl;
+            return 0;
+        } else if((bulan==4)||(bulan==6)||(bulan==9)||(bulan==11)){
+            if(tanggal>=31){
+                bulan = bulan+1;
+                tanggal =tanggal-30;
+                if(bulan>=13){
+                    tahun = tahun+1;
+                    bulan =bulan-12;
+                    cout << "Tanggal " << tanggal <<", Bulan " << bulan << ", Tahun " << tahun <<endl;
+                    return 0;
+                }
+                cout << "Tanggal " << tanggal <<", Bulan " << bulan << ", Tahun " << tahun <<endl;
+                return 0;
+            }
+            cout << "Tanggal " << tanggal <<", Bulan " << bulan << ", Tahun " << tahun <<endl;
+            return 0;
+        } else if(bulan==2){
+            if(tanggal>=29){
+                bulan = bulan+1;
+                tanggal =tanggal-28;
+                if(bulan>=13){
+                    tahun = tahun+1;
+                    bulan =bulan-12;
+                    cout << "Tanggal " << tanggal <<", Bulan " << bulan << ", Tahun " << tahun <<endl;
+                    return 0;
+                }
+                cout << "Tanggal " << tanggal <<", Bulan " << bulan << ", Tahun " << tahun <<endl;
+                return 0;
+            }
+            cout << "Tanggal " << tanggal <<", Bulan " << bulan << ", Tahun " << tahun <<endl;
+            return 0;
+        }
+    }
+    
+}
