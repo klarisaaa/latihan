@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int n,i,jumlah;
+    
+    cout <<"masukan nilai n:";
+    cin>>n;
+    
+    jumlah=0;
+    1=2;
+    while(i,<=n){
+        jumlah+jumlah+i;
+        i+i2;
+        
+    cout<<"jumlah="<<jumlah<<end1;
+    
+}
