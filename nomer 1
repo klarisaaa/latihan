@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+    cout<<"masukan nilai n:";
+    cin>> n;
+    int jawaban = 0;
+    for (int i=1; i<=n; i++){
+        jawaban+=i;
+    }
+        cout<<"hasil :"<<jawaban<<end1;
+}
