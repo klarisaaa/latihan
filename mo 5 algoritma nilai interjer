@@ -1,0 +1,63 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    char a;
+    int b;
+    cout <<"Ketikkan karakter digit (0..9): ";
+    cin >> a;
+    switch(a) {
+        case '1' :
+        b = 1; 
+        cout << endl;
+        cout <<"Nilai konversi ke integer : " << b;
+        break;
+        case '2' :
+        b = 2;
+        cout << endl;
+        cout <<"Nilai konversi ke integer : " << b;
+        break;
+        case '3' :
+        b = 3;
+        cout << endl;
+        cout <<"Nilai konversi ke integer : " << b;
+        break;
+        case '4' :
+        b = 4;
+        cout << endl;
+        cout <<"Nilai konversi ke integer : " << b;
+        break;
+        case '5' :
+        b = 5;
+        cout << endl;
+        cout <<"Nilai konversi ke integer : " << b;
+        break;
+        case '6' :
+        b = 6;
+        cout << endl;
+        cout <<"Nilai konversi ke integer : " << b;
+        break;
+        case '7' :
+        b = 7;
+        cout << endl;
+        cout <<"Nilai konversi ke integer : " << b;
+        break;
+        case '8' :
+        b = 8;
+        cout << endl;
+        cout <<"Nilai konversi ke integer : " << b;
+        break;
+        case '9' :
+        b = 9;
+        cout << endl;
+        cout <<"Nilai konversi ke integer : " << b;
+        break;
+        default :
+        b = -99;
+        cout << endl;
+        cout << "Jika bukan karakter digit maka bernilai :" <<b;
+        break;
+    }
+    return 0;
+}
