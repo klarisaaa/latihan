@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+   int harga,diskon,total;
+   cout<<"masukkan total harga (jika total harga lebih dari 100000 dapet diskon 25%): ";
+   cin>>harga;
+   if (harga>100000){
+       diskon=(harga*25)/100;
+       total=harga-diskon;
+       cout<<"diskon yang didapat : "<<diskon <<endl;
+       cout<<"harga setelah diskon: "<<total<<endl;
+      
+      return 0; 
+   }
+   cout<<"tidak diskon"<<endl;
+   cout<<"total harga:"<<harga<<endl;
+}
