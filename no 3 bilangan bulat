@@ -1,0 +1,24 @@
+int a, b, c, x;
+   cout<<"Masukkan a : ";
+   cin>>a;
+   cout<<"Masukkan b : ";
+   cin>>b;
+   cout<<"Masukkan c : ";
+   cin>>c;
+   if(b < a){
+      x = b;
+      b = a;
+      a = x;
+   }
+   if(c < a){
+      x = c;
+      c = a;
+      a = x;
+   }
+   if(c < b){
+      x = b;
+      b = c;
+      c = x;
+   }
+   cout<<"Bilangan setelah diurutkan : "<<a<<" "<<b<<" "<<c;
+}
