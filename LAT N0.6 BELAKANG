@@ -1,0 +1,62 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int saldo, x,y,z;
+	string pin;
+	saldo = 50000;
+login:
+	system("cls");
+	cout << "------------------------" << endl;
+	cout << "------BANK QORYGORE-----" << endl;
+	cout << "------------------------" << endl;
+	cout << "-Masukkan Pin :";
+	cin >> pin;
+	if (pin == "7198254") {
+		goto menu;
+	}
+	else {
+		cout << endl;
+		cout <<"--- PIN SALAH!---" << endl;
+		cout <<"ulangi, masukkan nomor 1" << endl;
+		cin >> y;
+		goto login;
+	}
+menu:
+	system("cls");
+	cout << "--- Selamat datang ---" << endl;
+	cout << "Saldo anda tersisa : " << saldo << endl;
+	cout << "----------------------" << endl;
+	cout << "Pilihan : " << endl;
+	cout << "0. Setor " << endl;
+	cout << "1. Tarik " << endl;
+	cin >> x;
+	if (x == 1) {
+		system("cls");
+		cout << "Nominal yang ingin anda tarik :";
+		cin >> z;
+		if (saldo - z >= 10000) {
+			saldo = saldo - z;
+			cout << "Pengambilan uang berhasil!";
+			cin >> y;
+			goto menu;
+		}
+		else {
+			cout << "Saldo anda kurang!";
+				cin >> y;
+			goto menu;
+		}
+	}
+	else if (x == 0) {
+		system("cls");
+		cout << "Masukkan uang setoran : ";
+		cin >> z;
+		saldo = saldo + z;
+		cout << endl;
+		cout << "Setoran Berhasil!!";
+		cin >> y;
+		goto menu;
+
+	}
+
+}
