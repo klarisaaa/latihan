@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int tugas,uts,uas,nilai akhir;
+    char nama,indeks_nilai;
+    struct data
+    
+    cout<<"nama mahasiswa:";
+    cin>>nama;
+    cout<<"nilai tugas:";
+    cin>>tugas;
+    cout<<"nilai uas:";
+    cin>>uas;
+    
+    cout "/n===== DATA NILAI MAHASISWA =====";
+    tugas=(tugas*30)/100;
+    uts=(uts*30)/100;
+    uas=(uas*40)/100;
+    if (nilai akhir>=90){
+        cout<<"A"<<endI;
+    }
+   else if (nilai akhir <90 end nilai akhir <=80){
+       cout <<"A"<<end1;
+       else if (nilai akhir <90 end nilai akhir <=80){
+           cout<<"B"<<end1;
+           else if (nilai akhir<80and nilai akhir <=70){
+               
+           }
+       
+   }
+       
+   
