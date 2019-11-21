@@ -1,0 +1,39 @@
+#include <iostream>
+#include<conio.h>
+#include<math.h>
+using namespace std;
+
+void bunga(float a, float i, float n);
+
+void bunga(float a, float i, float n) {
+	float j=0, b,l;
+	for (float z = 1; z <= n; z++) {
+		b = 0;
+		if (z == 1) {
+			b = 1 + (i / 100);
+			j = j + b;
+		} 
+		if(z >1){
+			b = 1 + (i / 100);
+			l = z;
+			b = pow(b, i);
+			j = j + b;
+		}
+	}
+	float total;
+	total = a * j;
+	cout << "Uang anda menjadi : " << total;
+
+}
+
+int main() {
+	float a,i,n;
+	cout << "Masukkan jumlah uang : ";
+	cin >> a;
+	cout << "Disimpan berapa tahun? : ";
+	cin >> n;
+	cout << "Bunga tahunan (%) : ";
+	cin >> i;
+	cout << endl;
+	bunga(a, i, n);
+}
