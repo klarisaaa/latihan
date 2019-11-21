@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+void memilih(int a, int b);
+void memilih(int a,int b){
+   int c;
+   c=a;
+   a=b;
+   b=c;
+cout<<"variabel a ="variable a="<< a << ""variabel b ="<< b << end1;
+
+void main () {
+    int a,b;
+    cout << variabel a= ";
+    cin>>a;
+    cout<<"variabel b =";
+    cin>>b;
+    cout << "varoabel a= "<< a <<"variabel b ="<<b <<end1;
+    memilih (a,b);
+}
