@@ -1,0 +1,71 @@
+#include <iostream>
+using namespace std;
+
+void AddPecahan(float x1, float y1, float x2, float y2);
+void SubPecahan(float x1, float y1, float x2, float y2);
+void MultiplyPecahan(float x1, float y1, float x2, float y2);
+void DevidePecahan(float x1, float y1, float x2, float y2);
+
+void AddPecahan(float x1, float y1, float x2, float y2) {
+	float pembilang, penyebut;
+	if (y1 != y2) {
+		pembilang = (x1 * y2) + (x2 * y1);
+		penyebut = (y1 * y2);
+		cout << x1 << "/" << y1 << " + " << x2 << "/" << y2 << " = " << pembilang << "/" << penyebut;
+	}
+	else {
+		pembilang = x1 + x2;
+		penyebut = y2;
+		cout << x1 << "/" << y1 << " + " << x2 << "/" << y2 << " = " << pembilang << "/" << penyebut;
+	}
+	
+}
+void SubPecahan(float x1, float y1, float x2, float y2) {
+	float pembilang, penyebut;
+	if (y1 != y2) {
+		pembilang = (x1 * y2) - (x2 * y1);
+		penyebut = (y1 * y2);
+		cout << x1 << "/" << y1 << " - " << x2 << "/" << y2 << " = " << pembilang << "/" << penyebut;
+	}
+	else {
+		pembilang = x1 - x2;
+		penyebut = y2;
+		cout << x1 << "/" << y1 << " - " << x2 << "/" << y2 << " = " << pembilang << "/" << penyebut;
+	}
+}
+void MultiplyPecahan(float x1, float y1, float x2, float y2) {
+	float pembilang, penyebut;
+	pembilang = (x1 * x2);
+	penyebut = (y1 * y2);
+	cout << x1 << "/" << y1 << " * " << x2 << "/" << y2 << " = " << pembilang << "/" << penyebut;
+}
+void DevidePecahan(float x1, float y1, float x2, float y2) {
+	float pembilang, penyebut;
+	pembilang = (x1 * y2);
+	penyebut = (y1 * x2);
+	cout << x1 << "/" << y1 << " / " << x2 << "/" << y2 << " = ";
+	cout << x1 << "/" << y1 << " * " << y2 << "/" << x2 << " = " << pembilang << "/" << penyebut;
+}
+
+void main() {
+	float x1, y1, x2, y2;
+	cout << "Pembilang 1 : ";
+	cin >> x1;
+	cout << "Penyebut 1 : ";
+	cin >> y1;
+	cout << "Pembilang 2 : ";
+	cin >> x2;
+	cout << "Penyebut 2 : ";
+	cin >> y2;
+	cout << endl;
+	AddPecahan(x1, y1, x2, y2);
+	cout << endl;
+	SubPecahan(x1, y1, x2, y2);
+	cout << endl;
+	MultiplyPecahan(x1, y1, x2, y2);
+	cout << endl;
+	DevidePecahan(x1, y1, x2, y2);
+
+
+}
+© 2019 GitHub, Inc.
