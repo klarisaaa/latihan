@@ -1,0 +1,21 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+void logika(char a) {
+	if (a == 'a') {
+		cout << "True";
+	}
+	else {
+		cout << "False";
+	}
+}
+
+int main() {
+	char a;
+	cout << "Masukkan karakter : ";
+	cin >> a;
+	cout << endl;
+	logika(a);
+	
+}
