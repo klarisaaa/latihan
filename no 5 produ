@@ -1,0 +1,35 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+void tanggalan(int dd, int mm, int yy) {
+	int dd2;
+	dd2 = dd - 1;
+	cout << "Kemarin : " << dd2 << "-" << mm << "-" << yy << endl;
+}
+
+int main() {
+	int dd, mm, yy;
+	cout << "Tanggal : ";
+	cin >> dd;
+	cout << "Bulan : ";
+	cin >> mm;
+	cout << "Tahun : ";
+	cin >> yy;
+	
+	if (dd >= 32) {
+		cout << endl;
+		cout << "Tanggal tidak diketahui";
+		return 0;
+	}
+	if (mm >= 13) {
+		cout << endl;
+		cout << "bulan tidak diketahui";
+		return 0;
+	}
+
+	cout << endl;
+	cout << "Sekarang : " << dd << "-" << mm << "-" << yy << endl;
+	tanggalan(dd, mm, yy);
+}
