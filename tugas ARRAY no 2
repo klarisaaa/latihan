@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+char x;
+int main(){
+    char karakter[10];
+    for(int i=0;i<10;i++){
+     cin<<karakter[i];
+    }
+    for (i=0;i<10;i++){
+        cout<<karakter[i]<<" ";
+    }
+    cout<<"masukan karakter ";
+    cin>> x
+    cout<<endl;
+    if (int x ='c'){
+        karakter = karakter+1;
+        
+    }
+    }    
+cout<<"maka huruf '"<<'c '<< "'yang muncul sebanyak:"<<karakter;
+}
