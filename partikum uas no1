@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main () {
+ 
+    char pass[6];
+    int password;
+    int i;
+    
+    cout <<"kode yang dimasukan : ";
+    cin >> pass [i] ;
+    
+    for (int i=1 ; i<6 ; i++)
+    {
+     if (pass [i] == ' ')
+     {
+         password == '2';
+        }
+        
+        else if ((pass [i] == 'a') || (pass [i] == 'b') || (pass [i] == 'c'))
+        {
+            password == '2';
+        }
+     
+     else if ((pass [i] == 'e') || (pass [i] == 'f') || (pass [i] == 'g'))
+        {
+            password == '3';
+        }
+    }
+    
+    cout <<"kode yang disimpan : "<<password;
+
+ return 0 ;      
+    
